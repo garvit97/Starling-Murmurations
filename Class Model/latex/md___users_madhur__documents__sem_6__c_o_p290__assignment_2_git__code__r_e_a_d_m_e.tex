@@ -1,0 +1,77 @@
+The software structure is designed to simulate the motion of Starlings using C++. Open\+GL is used for animation.
+
+\subsection*{Getting Started}
+
+\subsubsection*{Prerequisites}
+
+To install glew\+:
+
+
+\begin{DoxyCode}
+cd external/glew-1.13.0
+make
+sudo -s
+make install
+make clean
+\end{DoxyCode}
+
+
+To install open\+GL\+:
+
+
+\begin{DoxyCode}
+cd external/glfw-3.1.2
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+\end{DoxyCode}
+
+
+To install glm\+:
+
+
+\begin{DoxyCode}
+cd external/glm-0.9.7.1
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+\end{DoxyCode}
+
+
+\subsubsection*{Installing}
+
+For Mac type\+:
+
+
+\begin{DoxyCode}
+make clean
+make mac
+\end{DoxyCode}
+
+
+For Linux type\+:
+
+
+\begin{DoxyCode}
+make clean
+make linux
+\end{DoxyCode}
+
+
+\subsection*{Usage}
+
+To start the program type
+
+
+\begin{DoxyCode}
+./app <number of starlings to start with (Default 500)>
+\end{DoxyCode}
+
+
+To add more boids to the screen, point at the desired position on the window and left click while pressing \char`\"{}\+B\char`\"{} on Keyboard. To add predators to the screen, point at the desired position on the window and left click while pressing \char`\"{}\+P\char`\"{} on Keyboard. To add still obstacles to the screen, point at the desired position on the window and left click while pressing \char`\"{}\+O\char`\"{} on Keyboard.
+
+For rotating the frame of view, use the arrow keys. 

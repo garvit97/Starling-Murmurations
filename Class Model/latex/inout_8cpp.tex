@@ -1,0 +1,477 @@
+\hypertarget{inout_8cpp}{}\section{/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/src/inout.cpp File Reference}
+\label{inout_8cpp}\index{/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/src/inout.\+cpp@{/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/src/inout.\+cpp}}
+{\ttfamily \#include $<$G\+L/glew.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L\+F\+W/glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtx/vector\+\_\+angle.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtx/transform.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}shader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}boid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}params.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}predator.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::mat4 \mbox{\hyperlink{inout_8cpp_a3a753d65c95a998983e0e02523cd816a}{compute\+Rotation\+Of\+Frame}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_a99f7951bef80e67a7658b8a51e609858}{initialize\+Window}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_aa453dadaa1854e69367599ec5c8c364f}{set\+Object\+ID}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_adecd1049092feca30152e521951f63b3}{create\+Buffers}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_a11f63bba0c9bac7bf2aa81ab6f1ec3ca}{set\+Shaders}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_a08abcb3cd68981791c17e66f7f8d0493}{initialize\+Everything}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_a7943fd8bee0b8fe3fbd5ac0b041df254}{end\+Everything}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_a8d33615870fcf3a4f6e0ab59e897ebf5}{display}} (G\+Luint vertex)
+\item 
+void \mbox{\hyperlink{inout_8cpp_a0106258b90cc3bc02278dda097a91b17}{display\+\_\+obstacle}} ()
+\item 
+void \mbox{\hyperlink{inout_8cpp_ae41a3951e1196401047b29ad1d37c6ae}{mouse\+Button\+Callback}} (G\+L\+F\+Wwindow $\ast$\mbox{\hyperlink{main_8cpp_a80de27bd7dc4e2b2ad3d5895b97a70f0}{window}}, int button, int action, int mods)
+\item 
+void \mbox{\hyperlink{inout_8cpp_a1ebc242ddc840ec56635698cb8225755}{output}} (std\+::vector$<$ \mbox{\hyperlink{classboid}{boid}} $>$ \&boids, std\+::vector$<$ \mbox{\hyperlink{classpredator}{predator}} $>$ \&predators, std\+::vector$<$ glm\+::vec3 $>$ \&obstacles)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{inout_8cpp_a80de27bd7dc4e2b2ad3d5895b97a70f0}{window}}
+\item 
+class \mbox{\hyperlink{classsystem}{system}} \mbox{\hyperlink{inout_8cpp_a8fb29a51eda612584e4fd2fc4b7c14bd}{sys}}
+\item 
+bool \mbox{\hyperlink{inout_8cpp_ac746fa6ad48d19984a159f14bec028a3}{quit}}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ \mbox{\hyperlink{inout_8cpp_aa74e9d350d229ce726084532c2eb4d53}{vertices\+\_\+flap2}} \{glm\+::vec3(0,1.\+5,-\/0.\+102471),glm\+::vec3(-\/0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0,-\/0.\+5,0.\+475529),glm\+::vec3(0,-\/1.\+5,-\/0.\+102471),glm\+::vec3(1.\+4,0.\+5,1.\+0295),glm\+::vec3(1.\+77,0,1.\+1266),glm\+::vec3(1.\+77,0,1.\+0665),glm\+::vec3(-\/1.\+4,0.\+5,1.\+0295),glm\+::vec3(-\/1.\+77,0,1.\+1266),glm\+::vec3(-\/1.\+77,0,1.\+0295),glm\+::vec3(-\/0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(-\/0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(-\/0.\+266067,-\/0.\+25,-\/0.\+0574706),glm\+::vec3(0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(0.\+266067,-\/0.\+25,-\/0.\+0574706)\}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ \mbox{\hyperlink{inout_8cpp_a9d2041006677d9462e405a2ff236df38}{vertices\+\_\+flap1}} \{glm\+::vec3(0,1.\+5,-\/0.\+102471),glm\+::vec3(-\/0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0,-\/0.\+5,0.\+475529),glm\+::vec3(0,-\/1.\+5,-\/0.\+102471),glm\+::vec3(1.\+4,0.\+5,-\/0.\+944471),glm\+::vec3(1.\+77,0,-\/0.\+981471),glm\+::vec3(1.\+77,0,-\/1.\+18147),glm\+::vec3(-\/1.\+4,0.\+5,-\/0.\+944471),glm\+::vec3(-\/1.\+77,0,-\/0.\+981471),glm\+::vec3(-\/1.\+77,0,-\/1.\+18147),glm\+::vec3(-\/0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(-\/0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(-\/0.\+266067,-\/0.\+25,-\/0.\+0574706),glm\+::vec3(0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(0.\+266067,-\/0.\+25,-\/0.\+0574706)\}
+\item 
+std\+::vector$<$ uint16\+\_\+t $>$ \mbox{\hyperlink{inout_8cpp_a2c2dd01c3ac0b94679340b4581f50f4f}{indices\+\_\+flap}} \{0,2,1,4,3,1,4,2,3,4,1,2,15,5,14,15,6,5,14,5,16,16,5,7,9,11,8,9,12,11,10,8,11,10,11,13,10,13,12,9,10,12,16,7,6,15,16,6,3,15,0,15,14,0,14,16,0,0,16,2,14,15,16,3,16,15,3,2,16,0,1,12,0,12,11,12,1,13,11,12,13,13,1,3,0,11,13,0,13,3,5,6,7,9,8,10\}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ \mbox{\hyperlink{inout_8cpp_a7fbebcdc3721345668a5cbc39e89bfd4}{vertices\+\_\+obstacle}} \{glm\+::vec3(-\/1,-\/1,1),glm\+::vec3(1,-\/1,1),glm\+::vec3(1,1,1),glm\+::vec3(-\/1,1,1),glm\+::vec3(-\/1,-\/1,-\/1),glm\+::vec3(1,-\/1,-\/1),glm\+::vec3(1,1,-\/1),glm\+::vec3(-\/1,1,-\/1)\}
+\item 
+std\+::vector$<$ uint16\+\_\+t $>$ \mbox{\hyperlink{inout_8cpp_ab73b102c9809dadce32067cb0702bdd5}{indices\+\_\+obstacle}} \{0,1,3,3,1,2,2,1,5,2,5,6,3,2,7,7,2,6,3,7,4,3,4,0,0,4,1,4,5,1,4,7,6,5,4,6\}
+\item 
+std\+::vector$<$ glm\+::vec3 $>$ \mbox{\hyperlink{inout_8cpp_a41fcfd0dbfcc346592f544691a61beae}{normals\+\_\+obstacle}} \{glm\+::vec3(-\/1,-\/1,1),glm\+::vec3(1,-\/1,1),glm\+::vec3(1,1,1),glm\+::vec3(-\/1,1,1),glm\+::vec3(-\/1,-\/1,-\/1),glm\+::vec3(1,-\/1,-\/1),glm\+::vec3(1,1,-\/1),glm\+::vec3(-\/1,1,-\/1)\}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a38a90b277c5da4f364266e9483bb5b45}{vertexbuffer\+\_\+flap2}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_acabea8144b1f5d840450dc51e703782f}{elementbuffer\+\_\+flap}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a698911dff7d62e1dcd410ba66716b0fc}{vertexbuffer\+\_\+flap1}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a780b9445eadf99507af367c6141c661f}{elementbuffer\+\_\+obstacle}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_af4c03ad66d517cb6311da244098b5107}{vertexbuffer\+\_\+obstacle}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a2eefefcd12855e004a1bc607a9598dc3}{normalbuffer\+\_\+obstacle}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a391fd187e1c163e1bc7dc26a34c402f2}{program\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_ade23fcc9045e551e0eda50991018f745}{program\+I\+D\+\_\+lighting}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_ad471614cd302ae9dcc9f95cbb8d9e8fc}{Model\+Matrix\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_abd87fb0ea6a8da1341ed9b4c61198a49}{Model\+Matrix\+I\+D\+\_\+lighting}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_ab19cf36286363450e9a1a48f906f606f}{View\+Matrix\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_acaeac905a128e02309a41728f59877ae}{View\+Matrix\+I\+D\+\_\+lighting}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a6f91d732d0b524c77be0df6beaa6d55f}{Matrix\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a00c7f2abb84e527c65d6968ffe7be23e}{Matrix\+I\+D\+\_\+lighting}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a66003d233ff5df72f0e6eecadd1a369a}{Light\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a77f89a653264e2ff7b3f6410554774d4}{vertex\+Pos\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a4ed11b9119be8f6abfcba4b26cd39609}{vertex\+Pos\+I\+D\+\_\+ligthing}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a0c6cb9526dc4439ed689926a4623b630}{vertex\+Normal\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a400ef3ac3bf00c0519e52767cc56fd57}{vertex\+Color\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a681da9d7b71c255c08bc2377266338f0}{vertex\+Color\+I\+D\+\_\+lighting}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a76582fda781ba539e43392c83d36fa06}{scaling\+Factor\+ID}}
+\item 
+G\+Luint \mbox{\hyperlink{inout_8cpp_a758550dd2e94ec928c0ea23fa5ebb0c9}{scaling\+Factor\+I\+D\+\_\+lighting}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{inout_8cpp_a70036f65d3b1720aeb5ca880dad6d2bc}{view\+Matrix}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{inout_8cpp_ac19df984a9eda9f206402fb835af2a48}{projection\+Matrix}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{inout_8cpp_a1544894ebbca4bc597957b2304b8b6cc}{rotation\+Matrix\+Frame}}
+\item 
+float \mbox{\hyperlink{inout_8cpp_a1d50f082c8734f9484adfb1bf2dc115b}{FoV}} = 45.\+0f
+\item 
+glm\+::vec3 \mbox{\hyperlink{inout_8cpp_ab17456efa59b99dbb85317ee492274b6}{position}} = glm\+::vec3(0,0,5)
+\item 
+glm\+::mat4 \mbox{\hyperlink{inout_8cpp_a11a6b6563e0a578e5f8a381b791e6d4b}{rot\+Matrix}} = glm\+::mat4(1.\+0f)
+\item 
+float \mbox{\hyperlink{inout_8cpp_a82d5ce35943d137ac4fb7c8792c851bc}{angle\+\_\+y}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{inout_8cpp_abca9b3820b0c2fe325698e47c01346e3}{angle\+\_\+x}} = 0.\+0f
+\item 
+float \mbox{\hyperlink{inout_8cpp_a61efabcca15cccefe7d85ea6da6af5e3}{Speed}} = 0.\+01f
+\item 
+bool \mbox{\hyperlink{inout_8cpp_a6db9c5280e265fd7b47c5a3b27384167}{allow}} = true
+\item 
+glm\+::vec3 \mbox{\hyperlink{inout_8cpp_acb702ddedef83554599ac985e7bc0b02}{light\+Pos}} = glm\+::vec3(0,0,25)
+\item 
+glm\+::vec3 \mbox{\hyperlink{inout_8cpp_a1485cad9bfa8ebc2cef7e4f1fa06b16f}{predator\+Color}} = glm\+::vec3(0.\+41,0.\+41,0.\+41)
+\item 
+glm\+::vec3 \mbox{\hyperlink{inout_8cpp_a16af55c5aef7882d8b62837d95c20858}{boid\+Color}} = glm\+::vec3(0.\+078f,0.\+078f,0.\+078f)
+\item 
+glm\+::vec3 \mbox{\hyperlink{inout_8cpp_a25a8965855df3def54f84e768d511ddf}{obstacle\+Color}} = glm\+::vec3(0.\+277,0.\+56,0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{inout_8cpp_a3a753d65c95a998983e0e02523cd816a}\label{inout_8cpp_a3a753d65c95a998983e0e02523cd816a}} 
+\index{inout.\+cpp@{inout.\+cpp}!compute\+Rotation\+Of\+Frame@{compute\+Rotation\+Of\+Frame}}
+\index{compute\+Rotation\+Of\+Frame@{compute\+Rotation\+Of\+Frame}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{compute\+Rotation\+Of\+Frame()}{computeRotationOfFrame()}}
+{\footnotesize\ttfamily glm\+::mat4 compute\+Rotation\+Of\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_adecd1049092feca30152e521951f63b3}\label{inout_8cpp_adecd1049092feca30152e521951f63b3}} 
+\index{inout.\+cpp@{inout.\+cpp}!create\+Buffers@{create\+Buffers}}
+\index{create\+Buffers@{create\+Buffers}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{create\+Buffers()}{createBuffers()}}
+{\footnotesize\ttfamily void create\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a8d33615870fcf3a4f6e0ab59e897ebf5}\label{inout_8cpp_a8d33615870fcf3a4f6e0ab59e897ebf5}} 
+\index{inout.\+cpp@{inout.\+cpp}!display@{display}}
+\index{display@{display}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{G\+Luint}]{vertex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a0106258b90cc3bc02278dda097a91b17}\label{inout_8cpp_a0106258b90cc3bc02278dda097a91b17}} 
+\index{inout.\+cpp@{inout.\+cpp}!display\+\_\+obstacle@{display\+\_\+obstacle}}
+\index{display\+\_\+obstacle@{display\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{display\+\_\+obstacle()}{display\_obstacle()}}
+{\footnotesize\ttfamily void display\+\_\+obstacle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a7943fd8bee0b8fe3fbd5ac0b041df254}\label{inout_8cpp_a7943fd8bee0b8fe3fbd5ac0b041df254}} 
+\index{inout.\+cpp@{inout.\+cpp}!end\+Everything@{end\+Everything}}
+\index{end\+Everything@{end\+Everything}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{end\+Everything()}{endEverything()}}
+{\footnotesize\ttfamily void end\+Everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a08abcb3cd68981791c17e66f7f8d0493}\label{inout_8cpp_a08abcb3cd68981791c17e66f7f8d0493}} 
+\index{inout.\+cpp@{inout.\+cpp}!initialize\+Everything@{initialize\+Everything}}
+\index{initialize\+Everything@{initialize\+Everything}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{initialize\+Everything()}{initializeEverything()}}
+{\footnotesize\ttfamily void initialize\+Everything (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a99f7951bef80e67a7658b8a51e609858}\label{inout_8cpp_a99f7951bef80e67a7658b8a51e609858}} 
+\index{inout.\+cpp@{inout.\+cpp}!initialize\+Window@{initialize\+Window}}
+\index{initialize\+Window@{initialize\+Window}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{initialize\+Window()}{initializeWindow()}}
+{\footnotesize\ttfamily void initialize\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_ae41a3951e1196401047b29ad1d37c6ae}\label{inout_8cpp_ae41a3951e1196401047b29ad1d37c6ae}} 
+\index{inout.\+cpp@{inout.\+cpp}!mouse\+Button\+Callback@{mouse\+Button\+Callback}}
+\index{mouse\+Button\+Callback@{mouse\+Button\+Callback}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{mouse\+Button\+Callback()}{mouseButtonCallback()}}
+{\footnotesize\ttfamily void mouse\+Button\+Callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a1ebc242ddc840ec56635698cb8225755}\label{inout_8cpp_a1ebc242ddc840ec56635698cb8225755}} 
+\index{inout.\+cpp@{inout.\+cpp}!output@{output}}
+\index{output@{output}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily void output (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classboid}{boid}} $>$ \&}]{boids,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classpredator}{predator}} $>$ \&}]{predators,  }\item[{std\+::vector$<$ glm\+::vec3 $>$ \&}]{obstacles }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_aa453dadaa1854e69367599ec5c8c364f}\label{inout_8cpp_aa453dadaa1854e69367599ec5c8c364f}} 
+\index{inout.\+cpp@{inout.\+cpp}!set\+Object\+ID@{set\+Object\+ID}}
+\index{set\+Object\+ID@{set\+Object\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{set\+Object\+I\+D()}{setObjectID()}}
+{\footnotesize\ttfamily void set\+Object\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{inout_8cpp_a11f63bba0c9bac7bf2aa81ab6f1ec3ca}\label{inout_8cpp_a11f63bba0c9bac7bf2aa81ab6f1ec3ca}} 
+\index{inout.\+cpp@{inout.\+cpp}!set\+Shaders@{set\+Shaders}}
+\index{set\+Shaders@{set\+Shaders}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{set\+Shaders()}{setShaders()}}
+{\footnotesize\ttfamily void set\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{inout_8cpp_a6db9c5280e265fd7b47c5a3b27384167}\label{inout_8cpp_a6db9c5280e265fd7b47c5a3b27384167}} 
+\index{inout.\+cpp@{inout.\+cpp}!allow@{allow}}
+\index{allow@{allow}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{allow}{allow}}
+{\footnotesize\ttfamily bool allow = true}
+
+\mbox{\Hypertarget{inout_8cpp_abca9b3820b0c2fe325698e47c01346e3}\label{inout_8cpp_abca9b3820b0c2fe325698e47c01346e3}} 
+\index{inout.\+cpp@{inout.\+cpp}!angle\+\_\+x@{angle\+\_\+x}}
+\index{angle\+\_\+x@{angle\+\_\+x}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{angle\+\_\+x}{angle\_x}}
+{\footnotesize\ttfamily float angle\+\_\+x = 0.\+0f}
+
+\mbox{\Hypertarget{inout_8cpp_a82d5ce35943d137ac4fb7c8792c851bc}\label{inout_8cpp_a82d5ce35943d137ac4fb7c8792c851bc}} 
+\index{inout.\+cpp@{inout.\+cpp}!angle\+\_\+y@{angle\+\_\+y}}
+\index{angle\+\_\+y@{angle\+\_\+y}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{angle\+\_\+y}{angle\_y}}
+{\footnotesize\ttfamily float angle\+\_\+y = 0.\+0f}
+
+\mbox{\Hypertarget{inout_8cpp_a16af55c5aef7882d8b62837d95c20858}\label{inout_8cpp_a16af55c5aef7882d8b62837d95c20858}} 
+\index{inout.\+cpp@{inout.\+cpp}!boid\+Color@{boid\+Color}}
+\index{boid\+Color@{boid\+Color}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{boid\+Color}{boidColor}}
+{\footnotesize\ttfamily glm\+::vec3 boid\+Color = glm\+::vec3(0.\+078f,0.\+078f,0.\+078f)}
+
+\mbox{\Hypertarget{inout_8cpp_acabea8144b1f5d840450dc51e703782f}\label{inout_8cpp_acabea8144b1f5d840450dc51e703782f}} 
+\index{inout.\+cpp@{inout.\+cpp}!elementbuffer\+\_\+flap@{elementbuffer\+\_\+flap}}
+\index{elementbuffer\+\_\+flap@{elementbuffer\+\_\+flap}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{elementbuffer\+\_\+flap}{elementbuffer\_flap}}
+{\footnotesize\ttfamily G\+Luint elementbuffer\+\_\+flap}
+
+\mbox{\Hypertarget{inout_8cpp_a780b9445eadf99507af367c6141c661f}\label{inout_8cpp_a780b9445eadf99507af367c6141c661f}} 
+\index{inout.\+cpp@{inout.\+cpp}!elementbuffer\+\_\+obstacle@{elementbuffer\+\_\+obstacle}}
+\index{elementbuffer\+\_\+obstacle@{elementbuffer\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{elementbuffer\+\_\+obstacle}{elementbuffer\_obstacle}}
+{\footnotesize\ttfamily G\+Luint elementbuffer\+\_\+obstacle}
+
+\mbox{\Hypertarget{inout_8cpp_a1d50f082c8734f9484adfb1bf2dc115b}\label{inout_8cpp_a1d50f082c8734f9484adfb1bf2dc115b}} 
+\index{inout.\+cpp@{inout.\+cpp}!FoV@{FoV}}
+\index{FoV@{FoV}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{FoV}{FoV}}
+{\footnotesize\ttfamily float FoV = 45.\+0f}
+
+\mbox{\Hypertarget{inout_8cpp_a2c2dd01c3ac0b94679340b4581f50f4f}\label{inout_8cpp_a2c2dd01c3ac0b94679340b4581f50f4f}} 
+\index{inout.\+cpp@{inout.\+cpp}!indices\+\_\+flap@{indices\+\_\+flap}}
+\index{indices\+\_\+flap@{indices\+\_\+flap}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{indices\+\_\+flap}{indices\_flap}}
+{\footnotesize\ttfamily std\+::vector$<$uint16\+\_\+t$>$ indices\+\_\+flap \{0,2,1,4,3,1,4,2,3,4,1,2,15,5,14,15,6,5,14,5,16,16,5,7,9,11,8,9,12,11,10,8,11,10,11,13,10,13,12,9,10,12,16,7,6,15,16,6,3,15,0,15,14,0,14,16,0,0,16,2,14,15,16,3,16,15,3,2,16,0,1,12,0,12,11,12,1,13,11,12,13,13,1,3,0,11,13,0,13,3,5,6,7,9,8,10\}}
+
+\mbox{\Hypertarget{inout_8cpp_ab73b102c9809dadce32067cb0702bdd5}\label{inout_8cpp_ab73b102c9809dadce32067cb0702bdd5}} 
+\index{inout.\+cpp@{inout.\+cpp}!indices\+\_\+obstacle@{indices\+\_\+obstacle}}
+\index{indices\+\_\+obstacle@{indices\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{indices\+\_\+obstacle}{indices\_obstacle}}
+{\footnotesize\ttfamily std\+::vector$<$uint16\+\_\+t$>$ indices\+\_\+obstacle \{0,1,3,3,1,2,2,1,5,2,5,6,3,2,7,7,2,6,3,7,4,3,4,0,0,4,1,4,5,1,4,7,6,5,4,6\}}
+
+\mbox{\Hypertarget{inout_8cpp_a66003d233ff5df72f0e6eecadd1a369a}\label{inout_8cpp_a66003d233ff5df72f0e6eecadd1a369a}} 
+\index{inout.\+cpp@{inout.\+cpp}!Light\+ID@{Light\+ID}}
+\index{Light\+ID@{Light\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{Light\+ID}{LightID}}
+{\footnotesize\ttfamily G\+Luint Light\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_acb702ddedef83554599ac985e7bc0b02}\label{inout_8cpp_acb702ddedef83554599ac985e7bc0b02}} 
+\index{inout.\+cpp@{inout.\+cpp}!light\+Pos@{light\+Pos}}
+\index{light\+Pos@{light\+Pos}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{light\+Pos}{lightPos}}
+{\footnotesize\ttfamily glm\+::vec3 light\+Pos = glm\+::vec3(0,0,25)}
+
+\mbox{\Hypertarget{inout_8cpp_a6f91d732d0b524c77be0df6beaa6d55f}\label{inout_8cpp_a6f91d732d0b524c77be0df6beaa6d55f}} 
+\index{inout.\+cpp@{inout.\+cpp}!Matrix\+ID@{Matrix\+ID}}
+\index{Matrix\+ID@{Matrix\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{Matrix\+ID}{MatrixID}}
+{\footnotesize\ttfamily G\+Luint Matrix\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_a00c7f2abb84e527c65d6968ffe7be23e}\label{inout_8cpp_a00c7f2abb84e527c65d6968ffe7be23e}} 
+\index{inout.\+cpp@{inout.\+cpp}!Matrix\+I\+D\+\_\+lighting@{Matrix\+I\+D\+\_\+lighting}}
+\index{Matrix\+I\+D\+\_\+lighting@{Matrix\+I\+D\+\_\+lighting}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{Matrix\+I\+D\+\_\+lighting}{MatrixID\_lighting}}
+{\footnotesize\ttfamily G\+Luint Matrix\+I\+D\+\_\+lighting}
+
+\mbox{\Hypertarget{inout_8cpp_ad471614cd302ae9dcc9f95cbb8d9e8fc}\label{inout_8cpp_ad471614cd302ae9dcc9f95cbb8d9e8fc}} 
+\index{inout.\+cpp@{inout.\+cpp}!Model\+Matrix\+ID@{Model\+Matrix\+ID}}
+\index{Model\+Matrix\+ID@{Model\+Matrix\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{Model\+Matrix\+ID}{ModelMatrixID}}
+{\footnotesize\ttfamily G\+Luint Model\+Matrix\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_abd87fb0ea6a8da1341ed9b4c61198a49}\label{inout_8cpp_abd87fb0ea6a8da1341ed9b4c61198a49}} 
+\index{inout.\+cpp@{inout.\+cpp}!Model\+Matrix\+I\+D\+\_\+lighting@{Model\+Matrix\+I\+D\+\_\+lighting}}
+\index{Model\+Matrix\+I\+D\+\_\+lighting@{Model\+Matrix\+I\+D\+\_\+lighting}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{Model\+Matrix\+I\+D\+\_\+lighting}{ModelMatrixID\_lighting}}
+{\footnotesize\ttfamily G\+Luint Model\+Matrix\+I\+D\+\_\+lighting}
+
+\mbox{\Hypertarget{inout_8cpp_a2eefefcd12855e004a1bc607a9598dc3}\label{inout_8cpp_a2eefefcd12855e004a1bc607a9598dc3}} 
+\index{inout.\+cpp@{inout.\+cpp}!normalbuffer\+\_\+obstacle@{normalbuffer\+\_\+obstacle}}
+\index{normalbuffer\+\_\+obstacle@{normalbuffer\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{normalbuffer\+\_\+obstacle}{normalbuffer\_obstacle}}
+{\footnotesize\ttfamily G\+Luint normalbuffer\+\_\+obstacle}
+
+\mbox{\Hypertarget{inout_8cpp_a41fcfd0dbfcc346592f544691a61beae}\label{inout_8cpp_a41fcfd0dbfcc346592f544691a61beae}} 
+\index{inout.\+cpp@{inout.\+cpp}!normals\+\_\+obstacle@{normals\+\_\+obstacle}}
+\index{normals\+\_\+obstacle@{normals\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{normals\+\_\+obstacle}{normals\_obstacle}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ normals\+\_\+obstacle \{glm\+::vec3(-\/1,-\/1,1),glm\+::vec3(1,-\/1,1),glm\+::vec3(1,1,1),glm\+::vec3(-\/1,1,1),glm\+::vec3(-\/1,-\/1,-\/1),glm\+::vec3(1,-\/1,-\/1),glm\+::vec3(1,1,-\/1),glm\+::vec3(-\/1,1,-\/1)\}}
+
+\mbox{\Hypertarget{inout_8cpp_a25a8965855df3def54f84e768d511ddf}\label{inout_8cpp_a25a8965855df3def54f84e768d511ddf}} 
+\index{inout.\+cpp@{inout.\+cpp}!obstacle\+Color@{obstacle\+Color}}
+\index{obstacle\+Color@{obstacle\+Color}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{obstacle\+Color}{obstacleColor}}
+{\footnotesize\ttfamily glm\+::vec3 obstacle\+Color = glm\+::vec3(0.\+277,0.\+56,0)}
+
+\mbox{\Hypertarget{inout_8cpp_ab17456efa59b99dbb85317ee492274b6}\label{inout_8cpp_ab17456efa59b99dbb85317ee492274b6}} 
+\index{inout.\+cpp@{inout.\+cpp}!position@{position}}
+\index{position@{position}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily glm\+::vec3 position = glm\+::vec3(0,0,5)}
+
+\mbox{\Hypertarget{inout_8cpp_a1485cad9bfa8ebc2cef7e4f1fa06b16f}\label{inout_8cpp_a1485cad9bfa8ebc2cef7e4f1fa06b16f}} 
+\index{inout.\+cpp@{inout.\+cpp}!predator\+Color@{predator\+Color}}
+\index{predator\+Color@{predator\+Color}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{predator\+Color}{predatorColor}}
+{\footnotesize\ttfamily glm\+::vec3 predator\+Color = glm\+::vec3(0.\+41,0.\+41,0.\+41)}
+
+\mbox{\Hypertarget{inout_8cpp_a391fd187e1c163e1bc7dc26a34c402f2}\label{inout_8cpp_a391fd187e1c163e1bc7dc26a34c402f2}} 
+\index{inout.\+cpp@{inout.\+cpp}!program\+ID@{program\+ID}}
+\index{program\+ID@{program\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{program\+ID}{programID}}
+{\footnotesize\ttfamily G\+Luint program\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_ade23fcc9045e551e0eda50991018f745}\label{inout_8cpp_ade23fcc9045e551e0eda50991018f745}} 
+\index{inout.\+cpp@{inout.\+cpp}!program\+I\+D\+\_\+lighting@{program\+I\+D\+\_\+lighting}}
+\index{program\+I\+D\+\_\+lighting@{program\+I\+D\+\_\+lighting}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{program\+I\+D\+\_\+lighting}{programID\_lighting}}
+{\footnotesize\ttfamily G\+Luint program\+I\+D\+\_\+lighting}
+
+\mbox{\Hypertarget{inout_8cpp_ac19df984a9eda9f206402fb835af2a48}\label{inout_8cpp_ac19df984a9eda9f206402fb835af2a48}} 
+\index{inout.\+cpp@{inout.\+cpp}!projection\+Matrix@{projection\+Matrix}}
+\index{projection\+Matrix@{projection\+Matrix}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{projection\+Matrix}{projectionMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 projection\+Matrix}
+
+\mbox{\Hypertarget{inout_8cpp_ac746fa6ad48d19984a159f14bec028a3}\label{inout_8cpp_ac746fa6ad48d19984a159f14bec028a3}} 
+\index{inout.\+cpp@{inout.\+cpp}!quit@{quit}}
+\index{quit@{quit}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{quit}{quit}}
+{\footnotesize\ttfamily bool quit}
+
+\mbox{\Hypertarget{inout_8cpp_a1544894ebbca4bc597957b2304b8b6cc}\label{inout_8cpp_a1544894ebbca4bc597957b2304b8b6cc}} 
+\index{inout.\+cpp@{inout.\+cpp}!rotation\+Matrix\+Frame@{rotation\+Matrix\+Frame}}
+\index{rotation\+Matrix\+Frame@{rotation\+Matrix\+Frame}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{rotation\+Matrix\+Frame}{rotationMatrixFrame}}
+{\footnotesize\ttfamily glm\+::mat4 rotation\+Matrix\+Frame}
+
+\mbox{\Hypertarget{inout_8cpp_a11a6b6563e0a578e5f8a381b791e6d4b}\label{inout_8cpp_a11a6b6563e0a578e5f8a381b791e6d4b}} 
+\index{inout.\+cpp@{inout.\+cpp}!rot\+Matrix@{rot\+Matrix}}
+\index{rot\+Matrix@{rot\+Matrix}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{rot\+Matrix}{rotMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 rot\+Matrix = glm\+::mat4(1.\+0f)}
+
+\mbox{\Hypertarget{inout_8cpp_a76582fda781ba539e43392c83d36fa06}\label{inout_8cpp_a76582fda781ba539e43392c83d36fa06}} 
+\index{inout.\+cpp@{inout.\+cpp}!scaling\+Factor\+ID@{scaling\+Factor\+ID}}
+\index{scaling\+Factor\+ID@{scaling\+Factor\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{scaling\+Factor\+ID}{scalingFactorID}}
+{\footnotesize\ttfamily G\+Luint scaling\+Factor\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_a758550dd2e94ec928c0ea23fa5ebb0c9}\label{inout_8cpp_a758550dd2e94ec928c0ea23fa5ebb0c9}} 
+\index{inout.\+cpp@{inout.\+cpp}!scaling\+Factor\+I\+D\+\_\+lighting@{scaling\+Factor\+I\+D\+\_\+lighting}}
+\index{scaling\+Factor\+I\+D\+\_\+lighting@{scaling\+Factor\+I\+D\+\_\+lighting}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{scaling\+Factor\+I\+D\+\_\+lighting}{scalingFactorID\_lighting}}
+{\footnotesize\ttfamily G\+Luint scaling\+Factor\+I\+D\+\_\+lighting}
+
+\mbox{\Hypertarget{inout_8cpp_a61efabcca15cccefe7d85ea6da6af5e3}\label{inout_8cpp_a61efabcca15cccefe7d85ea6da6af5e3}} 
+\index{inout.\+cpp@{inout.\+cpp}!Speed@{Speed}}
+\index{Speed@{Speed}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily float Speed = 0.\+01f}
+
+\mbox{\Hypertarget{inout_8cpp_a8fb29a51eda612584e4fd2fc4b7c14bd}\label{inout_8cpp_a8fb29a51eda612584e4fd2fc4b7c14bd}} 
+\index{inout.\+cpp@{inout.\+cpp}!sys@{sys}}
+\index{sys@{sys}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{sys}{sys}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{classsystem}{system}} sys}
+
+\mbox{\Hypertarget{inout_8cpp_a698911dff7d62e1dcd410ba66716b0fc}\label{inout_8cpp_a698911dff7d62e1dcd410ba66716b0fc}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertexbuffer\+\_\+flap1@{vertexbuffer\+\_\+flap1}}
+\index{vertexbuffer\+\_\+flap1@{vertexbuffer\+\_\+flap1}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertexbuffer\+\_\+flap1}{vertexbuffer\_flap1}}
+{\footnotesize\ttfamily G\+Luint vertexbuffer\+\_\+flap1}
+
+\mbox{\Hypertarget{inout_8cpp_a38a90b277c5da4f364266e9483bb5b45}\label{inout_8cpp_a38a90b277c5da4f364266e9483bb5b45}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertexbuffer\+\_\+flap2@{vertexbuffer\+\_\+flap2}}
+\index{vertexbuffer\+\_\+flap2@{vertexbuffer\+\_\+flap2}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertexbuffer\+\_\+flap2}{vertexbuffer\_flap2}}
+{\footnotesize\ttfamily G\+Luint vertexbuffer\+\_\+flap2}
+
+\mbox{\Hypertarget{inout_8cpp_af4c03ad66d517cb6311da244098b5107}\label{inout_8cpp_af4c03ad66d517cb6311da244098b5107}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertexbuffer\+\_\+obstacle@{vertexbuffer\+\_\+obstacle}}
+\index{vertexbuffer\+\_\+obstacle@{vertexbuffer\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertexbuffer\+\_\+obstacle}{vertexbuffer\_obstacle}}
+{\footnotesize\ttfamily G\+Luint vertexbuffer\+\_\+obstacle}
+
+\mbox{\Hypertarget{inout_8cpp_a400ef3ac3bf00c0519e52767cc56fd57}\label{inout_8cpp_a400ef3ac3bf00c0519e52767cc56fd57}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertex\+Color\+ID@{vertex\+Color\+ID}}
+\index{vertex\+Color\+ID@{vertex\+Color\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertex\+Color\+ID}{vertexColorID}}
+{\footnotesize\ttfamily G\+Luint vertex\+Color\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_a681da9d7b71c255c08bc2377266338f0}\label{inout_8cpp_a681da9d7b71c255c08bc2377266338f0}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertex\+Color\+I\+D\+\_\+lighting@{vertex\+Color\+I\+D\+\_\+lighting}}
+\index{vertex\+Color\+I\+D\+\_\+lighting@{vertex\+Color\+I\+D\+\_\+lighting}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertex\+Color\+I\+D\+\_\+lighting}{vertexColorID\_lighting}}
+{\footnotesize\ttfamily G\+Luint vertex\+Color\+I\+D\+\_\+lighting}
+
+\mbox{\Hypertarget{inout_8cpp_a0c6cb9526dc4439ed689926a4623b630}\label{inout_8cpp_a0c6cb9526dc4439ed689926a4623b630}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertex\+Normal\+ID@{vertex\+Normal\+ID}}
+\index{vertex\+Normal\+ID@{vertex\+Normal\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertex\+Normal\+ID}{vertexNormalID}}
+{\footnotesize\ttfamily G\+Luint vertex\+Normal\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_a77f89a653264e2ff7b3f6410554774d4}\label{inout_8cpp_a77f89a653264e2ff7b3f6410554774d4}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertex\+Pos\+ID@{vertex\+Pos\+ID}}
+\index{vertex\+Pos\+ID@{vertex\+Pos\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertex\+Pos\+ID}{vertexPosID}}
+{\footnotesize\ttfamily G\+Luint vertex\+Pos\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_a4ed11b9119be8f6abfcba4b26cd39609}\label{inout_8cpp_a4ed11b9119be8f6abfcba4b26cd39609}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertex\+Pos\+I\+D\+\_\+ligthing@{vertex\+Pos\+I\+D\+\_\+ligthing}}
+\index{vertex\+Pos\+I\+D\+\_\+ligthing@{vertex\+Pos\+I\+D\+\_\+ligthing}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertex\+Pos\+I\+D\+\_\+ligthing}{vertexPosID\_ligthing}}
+{\footnotesize\ttfamily G\+Luint vertex\+Pos\+I\+D\+\_\+ligthing}
+
+\mbox{\Hypertarget{inout_8cpp_a9d2041006677d9462e405a2ff236df38}\label{inout_8cpp_a9d2041006677d9462e405a2ff236df38}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertices\+\_\+flap1@{vertices\+\_\+flap1}}
+\index{vertices\+\_\+flap1@{vertices\+\_\+flap1}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertices\+\_\+flap1}{vertices\_flap1}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ vertices\+\_\+flap1 \{glm\+::vec3(0,1.\+5,-\/0.\+102471),glm\+::vec3(-\/0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0,-\/0.\+5,0.\+475529),glm\+::vec3(0,-\/1.\+5,-\/0.\+102471),glm\+::vec3(1.\+4,0.\+5,-\/0.\+944471),glm\+::vec3(1.\+77,0,-\/0.\+981471),glm\+::vec3(1.\+77,0,-\/1.\+18147),glm\+::vec3(-\/1.\+4,0.\+5,-\/0.\+944471),glm\+::vec3(-\/1.\+77,0,-\/0.\+981471),glm\+::vec3(-\/1.\+77,0,-\/1.\+18147),glm\+::vec3(-\/0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(-\/0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(-\/0.\+266067,-\/0.\+25,-\/0.\+0574706),glm\+::vec3(0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(0.\+266067,-\/0.\+25,-\/0.\+0574706)\}}
+
+\mbox{\Hypertarget{inout_8cpp_aa74e9d350d229ce726084532c2eb4d53}\label{inout_8cpp_aa74e9d350d229ce726084532c2eb4d53}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertices\+\_\+flap2@{vertices\+\_\+flap2}}
+\index{vertices\+\_\+flap2@{vertices\+\_\+flap2}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertices\+\_\+flap2}{vertices\_flap2}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ vertices\+\_\+flap2 \{glm\+::vec3(0,1.\+5,-\/0.\+102471),glm\+::vec3(-\/0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0.\+5,-\/0.\+5,-\/0.\+390471),glm\+::vec3(0,-\/0.\+5,0.\+475529),glm\+::vec3(0,-\/1.\+5,-\/0.\+102471),glm\+::vec3(1.\+4,0.\+5,1.\+0295),glm\+::vec3(1.\+77,0,1.\+1266),glm\+::vec3(1.\+77,0,1.\+0665),glm\+::vec3(-\/1.\+4,0.\+5,1.\+0295),glm\+::vec3(-\/1.\+77,0,1.\+1266),glm\+::vec3(-\/1.\+77,0,1.\+0295),glm\+::vec3(-\/0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(-\/0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(-\/0.\+266067,-\/0.\+25,-\/0.\+0574706),glm\+::vec3(0.\+0415631,0.\+75,0.\+0425294),glm\+::vec3(0.\+150781,-\/0.\+25,0.\+142529),glm\+::vec3(0.\+266067,-\/0.\+25,-\/0.\+0574706)\}}
+
+\mbox{\Hypertarget{inout_8cpp_a7fbebcdc3721345668a5cbc39e89bfd4}\label{inout_8cpp_a7fbebcdc3721345668a5cbc39e89bfd4}} 
+\index{inout.\+cpp@{inout.\+cpp}!vertices\+\_\+obstacle@{vertices\+\_\+obstacle}}
+\index{vertices\+\_\+obstacle@{vertices\+\_\+obstacle}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{vertices\+\_\+obstacle}{vertices\_obstacle}}
+{\footnotesize\ttfamily std\+::vector$<$glm\+::vec3$>$ vertices\+\_\+obstacle \{glm\+::vec3(-\/1,-\/1,1),glm\+::vec3(1,-\/1,1),glm\+::vec3(1,1,1),glm\+::vec3(-\/1,1,1),glm\+::vec3(-\/1,-\/1,-\/1),glm\+::vec3(1,-\/1,-\/1),glm\+::vec3(1,1,-\/1),glm\+::vec3(-\/1,1,-\/1)\}}
+
+\mbox{\Hypertarget{inout_8cpp_a70036f65d3b1720aeb5ca880dad6d2bc}\label{inout_8cpp_a70036f65d3b1720aeb5ca880dad6d2bc}} 
+\index{inout.\+cpp@{inout.\+cpp}!view\+Matrix@{view\+Matrix}}
+\index{view\+Matrix@{view\+Matrix}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{view\+Matrix}{viewMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 view\+Matrix}
+
+\mbox{\Hypertarget{inout_8cpp_ab19cf36286363450e9a1a48f906f606f}\label{inout_8cpp_ab19cf36286363450e9a1a48f906f606f}} 
+\index{inout.\+cpp@{inout.\+cpp}!View\+Matrix\+ID@{View\+Matrix\+ID}}
+\index{View\+Matrix\+ID@{View\+Matrix\+ID}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{View\+Matrix\+ID}{ViewMatrixID}}
+{\footnotesize\ttfamily G\+Luint View\+Matrix\+ID}
+
+\mbox{\Hypertarget{inout_8cpp_acaeac905a128e02309a41728f59877ae}\label{inout_8cpp_acaeac905a128e02309a41728f59877ae}} 
+\index{inout.\+cpp@{inout.\+cpp}!View\+Matrix\+I\+D\+\_\+lighting@{View\+Matrix\+I\+D\+\_\+lighting}}
+\index{View\+Matrix\+I\+D\+\_\+lighting@{View\+Matrix\+I\+D\+\_\+lighting}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{View\+Matrix\+I\+D\+\_\+lighting}{ViewMatrixID\_lighting}}
+{\footnotesize\ttfamily G\+Luint View\+Matrix\+I\+D\+\_\+lighting}
+
+\mbox{\Hypertarget{inout_8cpp_a80de27bd7dc4e2b2ad3d5895b97a70f0}\label{inout_8cpp_a80de27bd7dc4e2b2ad3d5895b97a70f0}} 
+\index{inout.\+cpp@{inout.\+cpp}!window@{window}}
+\index{window@{window}!inout.\+cpp@{inout.\+cpp}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ window}
+

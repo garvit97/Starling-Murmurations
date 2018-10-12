@@ -1,0 +1,251 @@
+\hypertarget{classpredator}{}\section{predator Class Reference}
+\label{classpredator}\index{predator@{predator}}
+
+
+{\ttfamily \#include $<$predator.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpredator_ac383b7a31c94d5db16c3d9ac6b21a6b4}{predator}} (class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\item 
+\mbox{\hyperlink{classpredator_ab37695f6e4a34848ef997baf64925fcb}{predator}} (vec3, class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\item 
+\mbox{\hyperlink{classpredator_a4626bc2acecb57820cd381a2f4443341}{predator}} (vec3, vec3, class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\item 
+vec3 \mbox{\hyperlink{classpredator_a676a00f3fcf0231ee203561bb63db10d}{rule1}} ()
+\item 
+vec3 \mbox{\hyperlink{classpredator_a65ea796e88837cd3d894a268f90160b5}{rule3}} ()
+\item 
+vec3 \mbox{\hyperlink{classpredator_af100da4595acd9a683706c6eb4b8fca5}{strong\+Wind}} ()
+\item 
+vec3 \mbox{\hyperlink{classpredator_a777cf9d960d012607f0ac0f8ca711564}{tend\+To\+Place}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classpredator_a2977439f6325236d944f4b9ad3d67161}{tend\+Away\+From\+Place}} ()
+\item 
+vec3 \mbox{\hyperlink{classpredator_aa905d1250c49b49af4074789afdb1a7c}{bound\+Position}} (vec3)
+\item 
+void \mbox{\hyperlink{classpredator_a065cda3b3c5f2d676d38d0be456311f7}{move\+Predator\+To\+New\+Pos}} ()
+\item 
+vec3 \mbox{\hyperlink{classpredator_a56d3ccf064af52f843fe71da8ce6a9fc}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classpredator_a3fa4db231bb9b2c509629488e93dee75}{set\+Position}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classpredator_ae29430ec8d6778b8c72ae485b75d8dda}{get\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classpredator_ab10d8ac5e3e4200bc94ed1b3a4122d20}{set\+Velocity}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classpredator_afbcd7455722b197a8c0c34d75f6c4c1c}{get\+Prev\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classpredator_aa2995b4172c462623436fd763142a729}{set\+Prev\+Velocity}} (vec3)
+\item 
+long \mbox{\hyperlink{classpredator_a4b8cbd5f3a26468a8c870f65d30e4b32}{get\+Prev\+Pos\+Time}} ()
+\item 
+void \mbox{\hyperlink{classpredator_a5420af60b3c705b66dbaaae6edaaa439}{set\+Prev\+Pos\+Time}} (long)
+\item 
+int \mbox{\hyperlink{classpredator_ab1017c980ef1d3b5043cc2bb12ab907c}{get\+Flap\+Status}} ()
+\item 
+int \mbox{\hyperlink{classpredator_a7c645f016c96f8cee0ec48c764eb2d91}{update\+Flap\+Status}} ()
+\item 
+void \mbox{\hyperlink{classpredator_ac62b9ec636df79dabf4201c46071b7ba}{set\+Flap\+Status}} (int)
+\item 
+void \mbox{\hyperlink{classpredator_af6bcdf0191bac594ef337d3aeff9d58a}{set\+System}} (class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \mbox{\hyperlink{classpredator_a9cd8ddd5c29b1df1065ba56edb19918a}{position}}
+\item 
+vec3 \mbox{\hyperlink{classpredator_aa515213888cc078cc3cc4d499d310f4f}{velocity}}
+\item 
+vec3 \mbox{\hyperlink{classpredator_a5e1ec6c8df7baefd2578738ff18346cc}{prev\+Velocity}}
+\item 
+long \mbox{\hyperlink{classpredator_a6264c5588a903f0623826a8d283b576b}{prev\+Pos\+Time}}
+\item 
+int \mbox{\hyperlink{classpredator_a69841e6dcdd17a8f14b86df35627f5c4}{flap\+Status}}
+\item 
+class \mbox{\hyperlink{classsystem}{system}} $\ast$ \mbox{\hyperlink{classpredator_a46029432880eb6c8b11edd70cc1468a2}{sys}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpredator_ac383b7a31c94d5db16c3d9ac6b21a6b4}\label{classpredator_ac383b7a31c94d5db16c3d9ac6b21a6b4}} 
+\index{predator@{predator}!predator@{predator}}
+\index{predator@{predator}!predator@{predator}}
+\subsubsection{\texorpdfstring{predator()}{predator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily predator\+::predator (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_ab37695f6e4a34848ef997baf64925fcb}\label{classpredator_ab37695f6e4a34848ef997baf64925fcb}} 
+\index{predator@{predator}!predator@{predator}}
+\index{predator@{predator}!predator@{predator}}
+\subsubsection{\texorpdfstring{predator()}{predator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily predator\+::predator (\begin{DoxyParamCaption}\item[{vec3}]{pos,  }\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a4626bc2acecb57820cd381a2f4443341}\label{classpredator_a4626bc2acecb57820cd381a2f4443341}} 
+\index{predator@{predator}!predator@{predator}}
+\index{predator@{predator}!predator@{predator}}
+\subsubsection{\texorpdfstring{predator()}{predator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily predator\+::predator (\begin{DoxyParamCaption}\item[{vec3}]{pos,  }\item[{vec3}]{vel,  }\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpredator_aa905d1250c49b49af4074789afdb1a7c}\label{classpredator_aa905d1250c49b49af4074789afdb1a7c}} 
+\index{predator@{predator}!bound\+Position@{bound\+Position}}
+\index{bound\+Position@{bound\+Position}!predator@{predator}}
+\subsubsection{\texorpdfstring{bound\+Position()}{boundPosition()}}
+{\footnotesize\ttfamily vec3 predator\+::bound\+Position (\begin{DoxyParamCaption}\item[{vec3}]{vel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_ab1017c980ef1d3b5043cc2bb12ab907c}\label{classpredator_ab1017c980ef1d3b5043cc2bb12ab907c}} 
+\index{predator@{predator}!get\+Flap\+Status@{get\+Flap\+Status}}
+\index{get\+Flap\+Status@{get\+Flap\+Status}!predator@{predator}}
+\subsubsection{\texorpdfstring{get\+Flap\+Status()}{getFlapStatus()}}
+{\footnotesize\ttfamily int predator\+::get\+Flap\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a56d3ccf064af52f843fe71da8ce6a9fc}\label{classpredator_a56d3ccf064af52f843fe71da8ce6a9fc}} 
+\index{predator@{predator}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!predator@{predator}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 predator\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a4b8cbd5f3a26468a8c870f65d30e4b32}\label{classpredator_a4b8cbd5f3a26468a8c870f65d30e4b32}} 
+\index{predator@{predator}!get\+Prev\+Pos\+Time@{get\+Prev\+Pos\+Time}}
+\index{get\+Prev\+Pos\+Time@{get\+Prev\+Pos\+Time}!predator@{predator}}
+\subsubsection{\texorpdfstring{get\+Prev\+Pos\+Time()}{getPrevPosTime()}}
+{\footnotesize\ttfamily long predator\+::get\+Prev\+Pos\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_afbcd7455722b197a8c0c34d75f6c4c1c}\label{classpredator_afbcd7455722b197a8c0c34d75f6c4c1c}} 
+\index{predator@{predator}!get\+Prev\+Velocity@{get\+Prev\+Velocity}}
+\index{get\+Prev\+Velocity@{get\+Prev\+Velocity}!predator@{predator}}
+\subsubsection{\texorpdfstring{get\+Prev\+Velocity()}{getPrevVelocity()}}
+{\footnotesize\ttfamily vec3 predator\+::get\+Prev\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_ae29430ec8d6778b8c72ae485b75d8dda}\label{classpredator_ae29430ec8d6778b8c72ae485b75d8dda}} 
+\index{predator@{predator}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!predator@{predator}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily vec3 predator\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a065cda3b3c5f2d676d38d0be456311f7}\label{classpredator_a065cda3b3c5f2d676d38d0be456311f7}} 
+\index{predator@{predator}!move\+Predator\+To\+New\+Pos@{move\+Predator\+To\+New\+Pos}}
+\index{move\+Predator\+To\+New\+Pos@{move\+Predator\+To\+New\+Pos}!predator@{predator}}
+\subsubsection{\texorpdfstring{move\+Predator\+To\+New\+Pos()}{movePredatorToNewPos()}}
+{\footnotesize\ttfamily void predator\+::move\+Predator\+To\+New\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a676a00f3fcf0231ee203561bb63db10d}\label{classpredator_a676a00f3fcf0231ee203561bb63db10d}} 
+\index{predator@{predator}!rule1@{rule1}}
+\index{rule1@{rule1}!predator@{predator}}
+\subsubsection{\texorpdfstring{rule1()}{rule1()}}
+{\footnotesize\ttfamily vec3 predator\+::rule1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a65ea796e88837cd3d894a268f90160b5}\label{classpredator_a65ea796e88837cd3d894a268f90160b5}} 
+\index{predator@{predator}!rule3@{rule3}}
+\index{rule3@{rule3}!predator@{predator}}
+\subsubsection{\texorpdfstring{rule3()}{rule3()}}
+{\footnotesize\ttfamily vec3 predator\+::rule3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_ac62b9ec636df79dabf4201c46071b7ba}\label{classpredator_ac62b9ec636df79dabf4201c46071b7ba}} 
+\index{predator@{predator}!set\+Flap\+Status@{set\+Flap\+Status}}
+\index{set\+Flap\+Status@{set\+Flap\+Status}!predator@{predator}}
+\subsubsection{\texorpdfstring{set\+Flap\+Status()}{setFlapStatus()}}
+{\footnotesize\ttfamily void predator\+::set\+Flap\+Status (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a3fa4db231bb9b2c509629488e93dee75}\label{classpredator_a3fa4db231bb9b2c509629488e93dee75}} 
+\index{predator@{predator}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!predator@{predator}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void predator\+::set\+Position (\begin{DoxyParamCaption}\item[{vec3}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a5420af60b3c705b66dbaaae6edaaa439}\label{classpredator_a5420af60b3c705b66dbaaae6edaaa439}} 
+\index{predator@{predator}!set\+Prev\+Pos\+Time@{set\+Prev\+Pos\+Time}}
+\index{set\+Prev\+Pos\+Time@{set\+Prev\+Pos\+Time}!predator@{predator}}
+\subsubsection{\texorpdfstring{set\+Prev\+Pos\+Time()}{setPrevPosTime()}}
+{\footnotesize\ttfamily void predator\+::set\+Prev\+Pos\+Time (\begin{DoxyParamCaption}\item[{long}]{prev\+Pos\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_aa2995b4172c462623436fd763142a729}\label{classpredator_aa2995b4172c462623436fd763142a729}} 
+\index{predator@{predator}!set\+Prev\+Velocity@{set\+Prev\+Velocity}}
+\index{set\+Prev\+Velocity@{set\+Prev\+Velocity}!predator@{predator}}
+\subsubsection{\texorpdfstring{set\+Prev\+Velocity()}{setPrevVelocity()}}
+{\footnotesize\ttfamily void predator\+::set\+Prev\+Velocity (\begin{DoxyParamCaption}\item[{vec3}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_af6bcdf0191bac594ef337d3aeff9d58a}\label{classpredator_af6bcdf0191bac594ef337d3aeff9d58a}} 
+\index{predator@{predator}!set\+System@{set\+System}}
+\index{set\+System@{set\+System}!predator@{predator}}
+\subsubsection{\texorpdfstring{set\+System()}{setSystem()}}
+{\footnotesize\ttfamily void predator\+::set\+System (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_ab10d8ac5e3e4200bc94ed1b3a4122d20}\label{classpredator_ab10d8ac5e3e4200bc94ed1b3a4122d20}} 
+\index{predator@{predator}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!predator@{predator}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}}
+{\footnotesize\ttfamily void predator\+::set\+Velocity (\begin{DoxyParamCaption}\item[{vec3}]{velocity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_af100da4595acd9a683706c6eb4b8fca5}\label{classpredator_af100da4595acd9a683706c6eb4b8fca5}} 
+\index{predator@{predator}!strong\+Wind@{strong\+Wind}}
+\index{strong\+Wind@{strong\+Wind}!predator@{predator}}
+\subsubsection{\texorpdfstring{strong\+Wind()}{strongWind()}}
+{\footnotesize\ttfamily vec3 predator\+::strong\+Wind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a2977439f6325236d944f4b9ad3d67161}\label{classpredator_a2977439f6325236d944f4b9ad3d67161}} 
+\index{predator@{predator}!tend\+Away\+From\+Place@{tend\+Away\+From\+Place}}
+\index{tend\+Away\+From\+Place@{tend\+Away\+From\+Place}!predator@{predator}}
+\subsubsection{\texorpdfstring{tend\+Away\+From\+Place()}{tendAwayFromPlace()}}
+{\footnotesize\ttfamily vec3 predator\+::tend\+Away\+From\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a777cf9d960d012607f0ac0f8ca711564}\label{classpredator_a777cf9d960d012607f0ac0f8ca711564}} 
+\index{predator@{predator}!tend\+To\+Place@{tend\+To\+Place}}
+\index{tend\+To\+Place@{tend\+To\+Place}!predator@{predator}}
+\subsubsection{\texorpdfstring{tend\+To\+Place()}{tendToPlace()}}
+{\footnotesize\ttfamily vec3 predator\+::tend\+To\+Place (\begin{DoxyParamCaption}\item[{vec3}]{place }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpredator_a7c645f016c96f8cee0ec48c764eb2d91}\label{classpredator_a7c645f016c96f8cee0ec48c764eb2d91}} 
+\index{predator@{predator}!update\+Flap\+Status@{update\+Flap\+Status}}
+\index{update\+Flap\+Status@{update\+Flap\+Status}!predator@{predator}}
+\subsubsection{\texorpdfstring{update\+Flap\+Status()}{updateFlapStatus()}}
+{\footnotesize\ttfamily int predator\+::update\+Flap\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpredator_a69841e6dcdd17a8f14b86df35627f5c4}\label{classpredator_a69841e6dcdd17a8f14b86df35627f5c4}} 
+\index{predator@{predator}!flap\+Status@{flap\+Status}}
+\index{flap\+Status@{flap\+Status}!predator@{predator}}
+\subsubsection{\texorpdfstring{flap\+Status}{flapStatus}}
+{\footnotesize\ttfamily int predator\+::flap\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpredator_a9cd8ddd5c29b1df1065ba56edb19918a}\label{classpredator_a9cd8ddd5c29b1df1065ba56edb19918a}} 
+\index{predator@{predator}!position@{position}}
+\index{position@{position}!predator@{predator}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 predator\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpredator_a6264c5588a903f0623826a8d283b576b}\label{classpredator_a6264c5588a903f0623826a8d283b576b}} 
+\index{predator@{predator}!prev\+Pos\+Time@{prev\+Pos\+Time}}
+\index{prev\+Pos\+Time@{prev\+Pos\+Time}!predator@{predator}}
+\subsubsection{\texorpdfstring{prev\+Pos\+Time}{prevPosTime}}
+{\footnotesize\ttfamily long predator\+::prev\+Pos\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpredator_a5e1ec6c8df7baefd2578738ff18346cc}\label{classpredator_a5e1ec6c8df7baefd2578738ff18346cc}} 
+\index{predator@{predator}!prev\+Velocity@{prev\+Velocity}}
+\index{prev\+Velocity@{prev\+Velocity}!predator@{predator}}
+\subsubsection{\texorpdfstring{prev\+Velocity}{prevVelocity}}
+{\footnotesize\ttfamily vec3 predator\+::prev\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpredator_a46029432880eb6c8b11edd70cc1468a2}\label{classpredator_a46029432880eb6c8b11edd70cc1468a2}} 
+\index{predator@{predator}!sys@{sys}}
+\index{sys@{sys}!predator@{predator}}
+\subsubsection{\texorpdfstring{sys}{sys}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{classsystem}{system}}$\ast$ predator\+::sys\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpredator_aa515213888cc078cc3cc4d499d310f4f}\label{classpredator_aa515213888cc078cc3cc4d499d310f4f}} 
+\index{predator@{predator}!velocity@{velocity}}
+\index{velocity@{velocity}!predator@{predator}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily vec3 predator\+::velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/include/\mbox{\hyperlink{predator_8h}{predator.\+h}}\item 
+/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/src/\mbox{\hyperlink{predator_8cpp}{predator.\+cpp}}\end{DoxyCompactItemize}

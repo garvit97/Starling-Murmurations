@@ -1,0 +1,215 @@
+\hypertarget{classobstacle}{}\section{obstacle Class Reference}
+\label{classobstacle}\index{obstacle@{obstacle}}
+
+
+{\ttfamily \#include $<$obstacle.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classobstacle_abcaa89feecd5d64beeb2c5b6862ea6ae}{boid}} (vec3)
+\item 
+\mbox{\hyperlink{classobstacle_a162c493ffaf30b68495fb927414962c1}{boid}} (vec3, vec3)
+\item 
+\mbox{\hyperlink{classobstacle_a6a0499c0ae24d0b554527bd93a7c8c97}{operator()}} ()
+\item 
+vec3 \mbox{\hyperlink{classobstacle_a7f0520183cb9c8a7edfe977cc7e7cca9}{rule1and2}} ()
+\item 
+vec3 \mbox{\hyperlink{classobstacle_abc29860de93b1d83dd80f98f70b19554}{rule3}} ()
+\item 
+vec3 \mbox{\hyperlink{classobstacle_aefbfa049ac32d9bf938e8abd3660d650}{strong\+Wind}} ()
+\item 
+vec3 \mbox{\hyperlink{classobstacle_aaee06f5eb44efbe0ed7ea035eeb86d38}{tend\+To\+Place}} ()
+\item 
+vec3 \mbox{\hyperlink{classobstacle_a791873b051c097fe6df330bf7b723555}{tend\+Away\+From\+Place}} ()
+\item 
+void \mbox{\hyperlink{classobstacle_a17369fa497590d9cab34563ff465918d}{bound\+Position}} ()
+\item 
+void \mbox{\hyperlink{classobstacle_a3f291286885f30c88f7b8feefebcd8f6}{limit\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classobstacle_a53b6085a360d48259d61d2f90e8f34d5}{move\+Boid\+To\+New\+Pos}} ()
+\item 
+vec3 \mbox{\hyperlink{classobstacle_adac0ac53796ad022421322a47cc237f1}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classobstacle_ac32e907563b7f824f07a41fe665a899c}{set\+Position}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classobstacle_a113bdf5134eb546d016594aecaac21d1}{get\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classobstacle_adfe6fe1978d265084184e0f3e4c4b97b}{set\+Velocity}} (vec3)
+\item 
+long \mbox{\hyperlink{classobstacle_ac47b2829af82756c780542c2891792c2}{get\+Prev\+Pos\+Time}} ()
+\item 
+void \mbox{\hyperlink{classobstacle_acda53aa0ed77badcbf9198b6537c2ecc}{set\+Prev\+Pos\+Time}} (long)
+\item 
+int \mbox{\hyperlink{classobstacle_aecd1f6f0a9bba04a29e2029f2ba7b765}{get\+Flap\+Status}} ()
+\item 
+int \mbox{\hyperlink{classobstacle_aebf13f8cf93fee557ac014b8fcc667c7}{update\+Flap\+Status}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \mbox{\hyperlink{classobstacle_ab64654020e39d648c9cdb964381539c7}{position}}
+\item 
+vec3 \mbox{\hyperlink{classobstacle_a4c1053819a6cfdecfdb9903224154b5a}{velocity}}
+\item 
+vec3 \mbox{\hyperlink{classobstacle_adf95e00ffb6277989021978958775acd}{prev\+Velocity}}
+\item 
+long \mbox{\hyperlink{classobstacle_a5a158be912520758d684c78a1102ec5e}{prev\+Pos\+Time}}
+\item 
+int \mbox{\hyperlink{classobstacle_aad28a67e921d3bb75d3e8e61824b170b}{flap\+Status}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classobstacle_abcaa89feecd5d64beeb2c5b6862ea6ae}\label{classobstacle_abcaa89feecd5d64beeb2c5b6862ea6ae}} 
+\index{obstacle@{obstacle}!boid@{boid}}
+\index{boid@{boid}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{boid()}{boid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily obstacle\+::boid (\begin{DoxyParamCaption}\item[{vec3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a162c493ffaf30b68495fb927414962c1}\label{classobstacle_a162c493ffaf30b68495fb927414962c1}} 
+\index{obstacle@{obstacle}!boid@{boid}}
+\index{boid@{boid}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{boid()}{boid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily obstacle\+::boid (\begin{DoxyParamCaption}\item[{vec3}]{,  }\item[{vec3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a17369fa497590d9cab34563ff465918d}\label{classobstacle_a17369fa497590d9cab34563ff465918d}} 
+\index{obstacle@{obstacle}!bound\+Position@{bound\+Position}}
+\index{bound\+Position@{bound\+Position}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{bound\+Position()}{boundPosition()}}
+{\footnotesize\ttfamily void obstacle\+::bound\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_aecd1f6f0a9bba04a29e2029f2ba7b765}\label{classobstacle_aecd1f6f0a9bba04a29e2029f2ba7b765}} 
+\index{obstacle@{obstacle}!get\+Flap\+Status@{get\+Flap\+Status}}
+\index{get\+Flap\+Status@{get\+Flap\+Status}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{get\+Flap\+Status()}{getFlapStatus()}}
+{\footnotesize\ttfamily int obstacle\+::get\+Flap\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_adac0ac53796ad022421322a47cc237f1}\label{classobstacle_adac0ac53796ad022421322a47cc237f1}} 
+\index{obstacle@{obstacle}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 obstacle\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_ac47b2829af82756c780542c2891792c2}\label{classobstacle_ac47b2829af82756c780542c2891792c2}} 
+\index{obstacle@{obstacle}!get\+Prev\+Pos\+Time@{get\+Prev\+Pos\+Time}}
+\index{get\+Prev\+Pos\+Time@{get\+Prev\+Pos\+Time}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{get\+Prev\+Pos\+Time()}{getPrevPosTime()}}
+{\footnotesize\ttfamily long obstacle\+::get\+Prev\+Pos\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a113bdf5134eb546d016594aecaac21d1}\label{classobstacle_a113bdf5134eb546d016594aecaac21d1}} 
+\index{obstacle@{obstacle}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily vec3 obstacle\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a3f291286885f30c88f7b8feefebcd8f6}\label{classobstacle_a3f291286885f30c88f7b8feefebcd8f6}} 
+\index{obstacle@{obstacle}!limit\+Velocity@{limit\+Velocity}}
+\index{limit\+Velocity@{limit\+Velocity}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{limit\+Velocity()}{limitVelocity()}}
+{\footnotesize\ttfamily void obstacle\+::limit\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a53b6085a360d48259d61d2f90e8f34d5}\label{classobstacle_a53b6085a360d48259d61d2f90e8f34d5}} 
+\index{obstacle@{obstacle}!move\+Boid\+To\+New\+Pos@{move\+Boid\+To\+New\+Pos}}
+\index{move\+Boid\+To\+New\+Pos@{move\+Boid\+To\+New\+Pos}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{move\+Boid\+To\+New\+Pos()}{moveBoidToNewPos()}}
+{\footnotesize\ttfamily void obstacle\+::move\+Boid\+To\+New\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a6a0499c0ae24d0b554527bd93a7c8c97}\label{classobstacle_a6a0499c0ae24d0b554527bd93a7c8c97}} 
+\index{obstacle@{obstacle}!operator()@{operator()}}
+\index{operator()@{operator()}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily obstacle\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a7f0520183cb9c8a7edfe977cc7e7cca9}\label{classobstacle_a7f0520183cb9c8a7edfe977cc7e7cca9}} 
+\index{obstacle@{obstacle}!rule1and2@{rule1and2}}
+\index{rule1and2@{rule1and2}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{rule1and2()}{rule1and2()}}
+{\footnotesize\ttfamily vec3 obstacle\+::rule1and2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_abc29860de93b1d83dd80f98f70b19554}\label{classobstacle_abc29860de93b1d83dd80f98f70b19554}} 
+\index{obstacle@{obstacle}!rule3@{rule3}}
+\index{rule3@{rule3}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{rule3()}{rule3()}}
+{\footnotesize\ttfamily vec3 obstacle\+::rule3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_ac32e907563b7f824f07a41fe665a899c}\label{classobstacle_ac32e907563b7f824f07a41fe665a899c}} 
+\index{obstacle@{obstacle}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void obstacle\+::set\+Position (\begin{DoxyParamCaption}\item[{vec3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_acda53aa0ed77badcbf9198b6537c2ecc}\label{classobstacle_acda53aa0ed77badcbf9198b6537c2ecc}} 
+\index{obstacle@{obstacle}!set\+Prev\+Pos\+Time@{set\+Prev\+Pos\+Time}}
+\index{set\+Prev\+Pos\+Time@{set\+Prev\+Pos\+Time}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{set\+Prev\+Pos\+Time()}{setPrevPosTime()}}
+{\footnotesize\ttfamily void obstacle\+::set\+Prev\+Pos\+Time (\begin{DoxyParamCaption}\item[{long}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_adfe6fe1978d265084184e0f3e4c4b97b}\label{classobstacle_adfe6fe1978d265084184e0f3e4c4b97b}} 
+\index{obstacle@{obstacle}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}}
+{\footnotesize\ttfamily void obstacle\+::set\+Velocity (\begin{DoxyParamCaption}\item[{vec3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_aefbfa049ac32d9bf938e8abd3660d650}\label{classobstacle_aefbfa049ac32d9bf938e8abd3660d650}} 
+\index{obstacle@{obstacle}!strong\+Wind@{strong\+Wind}}
+\index{strong\+Wind@{strong\+Wind}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{strong\+Wind()}{strongWind()}}
+{\footnotesize\ttfamily vec3 obstacle\+::strong\+Wind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_a791873b051c097fe6df330bf7b723555}\label{classobstacle_a791873b051c097fe6df330bf7b723555}} 
+\index{obstacle@{obstacle}!tend\+Away\+From\+Place@{tend\+Away\+From\+Place}}
+\index{tend\+Away\+From\+Place@{tend\+Away\+From\+Place}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{tend\+Away\+From\+Place()}{tendAwayFromPlace()}}
+{\footnotesize\ttfamily vec3 obstacle\+::tend\+Away\+From\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_aaee06f5eb44efbe0ed7ea035eeb86d38}\label{classobstacle_aaee06f5eb44efbe0ed7ea035eeb86d38}} 
+\index{obstacle@{obstacle}!tend\+To\+Place@{tend\+To\+Place}}
+\index{tend\+To\+Place@{tend\+To\+Place}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{tend\+To\+Place()}{tendToPlace()}}
+{\footnotesize\ttfamily vec3 obstacle\+::tend\+To\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classobstacle_aebf13f8cf93fee557ac014b8fcc667c7}\label{classobstacle_aebf13f8cf93fee557ac014b8fcc667c7}} 
+\index{obstacle@{obstacle}!update\+Flap\+Status@{update\+Flap\+Status}}
+\index{update\+Flap\+Status@{update\+Flap\+Status}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{update\+Flap\+Status()}{updateFlapStatus()}}
+{\footnotesize\ttfamily int obstacle\+::update\+Flap\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classobstacle_aad28a67e921d3bb75d3e8e61824b170b}\label{classobstacle_aad28a67e921d3bb75d3e8e61824b170b}} 
+\index{obstacle@{obstacle}!flap\+Status@{flap\+Status}}
+\index{flap\+Status@{flap\+Status}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{flap\+Status}{flapStatus}}
+{\footnotesize\ttfamily int obstacle\+::flap\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classobstacle_ab64654020e39d648c9cdb964381539c7}\label{classobstacle_ab64654020e39d648c9cdb964381539c7}} 
+\index{obstacle@{obstacle}!position@{position}}
+\index{position@{position}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 obstacle\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classobstacle_a5a158be912520758d684c78a1102ec5e}\label{classobstacle_a5a158be912520758d684c78a1102ec5e}} 
+\index{obstacle@{obstacle}!prev\+Pos\+Time@{prev\+Pos\+Time}}
+\index{prev\+Pos\+Time@{prev\+Pos\+Time}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{prev\+Pos\+Time}{prevPosTime}}
+{\footnotesize\ttfamily long obstacle\+::prev\+Pos\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classobstacle_adf95e00ffb6277989021978958775acd}\label{classobstacle_adf95e00ffb6277989021978958775acd}} 
+\index{obstacle@{obstacle}!prev\+Velocity@{prev\+Velocity}}
+\index{prev\+Velocity@{prev\+Velocity}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{prev\+Velocity}{prevVelocity}}
+{\footnotesize\ttfamily vec3 obstacle\+::prev\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classobstacle_a4c1053819a6cfdecfdb9903224154b5a}\label{classobstacle_a4c1053819a6cfdecfdb9903224154b5a}} 
+\index{obstacle@{obstacle}!velocity@{velocity}}
+\index{velocity@{velocity}!obstacle@{obstacle}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily vec3 obstacle\+::velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/include/\mbox{\hyperlink{obstacle_8h}{obstacle.\+h}}\end{DoxyCompactItemize}

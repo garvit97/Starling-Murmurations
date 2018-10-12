@@ -1,0 +1,251 @@
+\hypertarget{classboid}{}\section{boid Class Reference}
+\label{classboid}\index{boid@{boid}}
+
+
+{\ttfamily \#include $<$boid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classboid_a679e9c54388b10b996afc304736f7f9f}{boid}} (class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\item 
+\mbox{\hyperlink{classboid_a8e106f9109011ffe00204fb5b83f12c2}{boid}} (vec3, class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\item 
+\mbox{\hyperlink{classboid_acd0b39c9563ab3e0f6f4cfbed86fa113}{boid}} (vec3, vec3, class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\item 
+pair$<$ vec3, vec3 $>$ \mbox{\hyperlink{classboid_abbb96bf34e78a462af8d9c66e1f8427f}{rule1and2}} ()
+\item 
+pair$<$ vec3, vec3 $>$ \mbox{\hyperlink{classboid_a71d26e63c117b2d69364076a9d1cf011}{rule3}} ()
+\item 
+vec3 \mbox{\hyperlink{classboid_abf305f09cde8ce66b82a7a671fdcd744}{strong\+Wind}} ()
+\item 
+vec3 \mbox{\hyperlink{classboid_a09fbb8f0a0e58c5fa53c95cbd517fe95}{tend\+To\+Place}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classboid_a93134d78fea29397c53083bb44d54615}{tend\+Away\+From\+Place}} ()
+\item 
+void \mbox{\hyperlink{classboid_ab87a1586c29b4d180c2ca0b3e4d4ab0c}{move\+Boid\+To\+New\+Pos}} ()
+\item 
+vec3 \mbox{\hyperlink{classboid_adc3958d8172527063c6c181fce9136ff}{bound\+Position}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classboid_a2c5263307b1229f318c6a4adb9d9aed6}{get\+Position}} ()
+\item 
+void \mbox{\hyperlink{classboid_acb8f49d32e4a39327f990914b2520f11}{set\+Position}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classboid_a2d8189207adddd9ac37f0cf3be28da5c}{get\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classboid_ac4e66a9e65ea2e7362f6ac7af2f4fe64}{set\+Velocity}} (vec3)
+\item 
+vec3 \mbox{\hyperlink{classboid_a9e4a3515298169b581618cf1fbcedcc4}{get\+Prev\+Velocity}} ()
+\item 
+void \mbox{\hyperlink{classboid_a61aff8ed86684833832d1417a7c24346}{set\+Prev\+Velocity}} (vec3)
+\item 
+long \mbox{\hyperlink{classboid_ac518e9fb5d7ad104641e254d58f9ae6e}{get\+Prev\+Pos\+Time}} ()
+\item 
+void \mbox{\hyperlink{classboid_a93dc299e67fc16129a99ef712b2e2e85}{set\+Prev\+Pos\+Time}} (long)
+\item 
+int \mbox{\hyperlink{classboid_afe9b3c0b99cf7e10cfe5b3a04cebc733}{get\+Flap\+Status}} ()
+\item 
+void \mbox{\hyperlink{classboid_a9dd824da8b99de54ad8956a9d1f2ca1c}{set\+Flap\+Status}} (int)
+\item 
+int \mbox{\hyperlink{classboid_a3b2e087c8a4365927dbaa1a0a7d06a3a}{update\+Flap\+Status}} ()
+\item 
+void \mbox{\hyperlink{classboid_a80894b58a6f76451d4e999b3852f9f63}{set\+System}} (class \mbox{\hyperlink{classsystem}{system}} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vec3 \mbox{\hyperlink{classboid_a4a2816c0ff88a50c72dcc794f3a0c725}{position}}
+\item 
+vec3 \mbox{\hyperlink{classboid_a3493756cee09f08fd9cd2a49e8891b55}{velocity}}
+\item 
+vec3 \mbox{\hyperlink{classboid_a6673ea539a629b2fffbbc57e3ef56d19}{prev\+Velocity}}
+\item 
+long \mbox{\hyperlink{classboid_a4efec718a6ef62318a1221a07d05d0f1}{prev\+Pos\+Time}}
+\item 
+int \mbox{\hyperlink{classboid_a5c51e87fc048ba3f179b8d45b76673c5}{flap\+Status}}
+\item 
+class \mbox{\hyperlink{classsystem}{system}} $\ast$ \mbox{\hyperlink{classboid_aa1a06f851311eb6de9fefdffc4c5a99e}{sys}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classboid_a679e9c54388b10b996afc304736f7f9f}\label{classboid_a679e9c54388b10b996afc304736f7f9f}} 
+\index{boid@{boid}!boid@{boid}}
+\index{boid@{boid}!boid@{boid}}
+\subsubsection{\texorpdfstring{boid()}{boid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily boid\+::boid (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a8e106f9109011ffe00204fb5b83f12c2}\label{classboid_a8e106f9109011ffe00204fb5b83f12c2}} 
+\index{boid@{boid}!boid@{boid}}
+\index{boid@{boid}!boid@{boid}}
+\subsubsection{\texorpdfstring{boid()}{boid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily boid\+::boid (\begin{DoxyParamCaption}\item[{vec3}]{pos,  }\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_acd0b39c9563ab3e0f6f4cfbed86fa113}\label{classboid_acd0b39c9563ab3e0f6f4cfbed86fa113}} 
+\index{boid@{boid}!boid@{boid}}
+\index{boid@{boid}!boid@{boid}}
+\subsubsection{\texorpdfstring{boid()}{boid()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily boid\+::boid (\begin{DoxyParamCaption}\item[{vec3}]{pos,  }\item[{vec3}]{vel,  }\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classboid_adc3958d8172527063c6c181fce9136ff}\label{classboid_adc3958d8172527063c6c181fce9136ff}} 
+\index{boid@{boid}!bound\+Position@{bound\+Position}}
+\index{bound\+Position@{bound\+Position}!boid@{boid}}
+\subsubsection{\texorpdfstring{bound\+Position()}{boundPosition()}}
+{\footnotesize\ttfamily vec3 boid\+::bound\+Position (\begin{DoxyParamCaption}\item[{vec3}]{vel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_afe9b3c0b99cf7e10cfe5b3a04cebc733}\label{classboid_afe9b3c0b99cf7e10cfe5b3a04cebc733}} 
+\index{boid@{boid}!get\+Flap\+Status@{get\+Flap\+Status}}
+\index{get\+Flap\+Status@{get\+Flap\+Status}!boid@{boid}}
+\subsubsection{\texorpdfstring{get\+Flap\+Status()}{getFlapStatus()}}
+{\footnotesize\ttfamily int boid\+::get\+Flap\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a2c5263307b1229f318c6a4adb9d9aed6}\label{classboid_a2c5263307b1229f318c6a4adb9d9aed6}} 
+\index{boid@{boid}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!boid@{boid}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily vec3 boid\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_ac518e9fb5d7ad104641e254d58f9ae6e}\label{classboid_ac518e9fb5d7ad104641e254d58f9ae6e}} 
+\index{boid@{boid}!get\+Prev\+Pos\+Time@{get\+Prev\+Pos\+Time}}
+\index{get\+Prev\+Pos\+Time@{get\+Prev\+Pos\+Time}!boid@{boid}}
+\subsubsection{\texorpdfstring{get\+Prev\+Pos\+Time()}{getPrevPosTime()}}
+{\footnotesize\ttfamily long boid\+::get\+Prev\+Pos\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a9e4a3515298169b581618cf1fbcedcc4}\label{classboid_a9e4a3515298169b581618cf1fbcedcc4}} 
+\index{boid@{boid}!get\+Prev\+Velocity@{get\+Prev\+Velocity}}
+\index{get\+Prev\+Velocity@{get\+Prev\+Velocity}!boid@{boid}}
+\subsubsection{\texorpdfstring{get\+Prev\+Velocity()}{getPrevVelocity()}}
+{\footnotesize\ttfamily vec3 boid\+::get\+Prev\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a2d8189207adddd9ac37f0cf3be28da5c}\label{classboid_a2d8189207adddd9ac37f0cf3be28da5c}} 
+\index{boid@{boid}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!boid@{boid}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily vec3 boid\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_ab87a1586c29b4d180c2ca0b3e4d4ab0c}\label{classboid_ab87a1586c29b4d180c2ca0b3e4d4ab0c}} 
+\index{boid@{boid}!move\+Boid\+To\+New\+Pos@{move\+Boid\+To\+New\+Pos}}
+\index{move\+Boid\+To\+New\+Pos@{move\+Boid\+To\+New\+Pos}!boid@{boid}}
+\subsubsection{\texorpdfstring{move\+Boid\+To\+New\+Pos()}{moveBoidToNewPos()}}
+{\footnotesize\ttfamily void boid\+::move\+Boid\+To\+New\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_abbb96bf34e78a462af8d9c66e1f8427f}\label{classboid_abbb96bf34e78a462af8d9c66e1f8427f}} 
+\index{boid@{boid}!rule1and2@{rule1and2}}
+\index{rule1and2@{rule1and2}!boid@{boid}}
+\subsubsection{\texorpdfstring{rule1and2()}{rule1and2()}}
+{\footnotesize\ttfamily pair$<$ vec3, vec3 $>$ boid\+::rule1and2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a71d26e63c117b2d69364076a9d1cf011}\label{classboid_a71d26e63c117b2d69364076a9d1cf011}} 
+\index{boid@{boid}!rule3@{rule3}}
+\index{rule3@{rule3}!boid@{boid}}
+\subsubsection{\texorpdfstring{rule3()}{rule3()}}
+{\footnotesize\ttfamily pair$<$ vec3, vec3 $>$ boid\+::rule3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a9dd824da8b99de54ad8956a9d1f2ca1c}\label{classboid_a9dd824da8b99de54ad8956a9d1f2ca1c}} 
+\index{boid@{boid}!set\+Flap\+Status@{set\+Flap\+Status}}
+\index{set\+Flap\+Status@{set\+Flap\+Status}!boid@{boid}}
+\subsubsection{\texorpdfstring{set\+Flap\+Status()}{setFlapStatus()}}
+{\footnotesize\ttfamily void boid\+::set\+Flap\+Status (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_acb8f49d32e4a39327f990914b2520f11}\label{classboid_acb8f49d32e4a39327f990914b2520f11}} 
+\index{boid@{boid}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!boid@{boid}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void boid\+::set\+Position (\begin{DoxyParamCaption}\item[{vec3}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a93dc299e67fc16129a99ef712b2e2e85}\label{classboid_a93dc299e67fc16129a99ef712b2e2e85}} 
+\index{boid@{boid}!set\+Prev\+Pos\+Time@{set\+Prev\+Pos\+Time}}
+\index{set\+Prev\+Pos\+Time@{set\+Prev\+Pos\+Time}!boid@{boid}}
+\subsubsection{\texorpdfstring{set\+Prev\+Pos\+Time()}{setPrevPosTime()}}
+{\footnotesize\ttfamily void boid\+::set\+Prev\+Pos\+Time (\begin{DoxyParamCaption}\item[{long}]{prev\+Pos\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a61aff8ed86684833832d1417a7c24346}\label{classboid_a61aff8ed86684833832d1417a7c24346}} 
+\index{boid@{boid}!set\+Prev\+Velocity@{set\+Prev\+Velocity}}
+\index{set\+Prev\+Velocity@{set\+Prev\+Velocity}!boid@{boid}}
+\subsubsection{\texorpdfstring{set\+Prev\+Velocity()}{setPrevVelocity()}}
+{\footnotesize\ttfamily void boid\+::set\+Prev\+Velocity (\begin{DoxyParamCaption}\item[{vec3}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a80894b58a6f76451d4e999b3852f9f63}\label{classboid_a80894b58a6f76451d4e999b3852f9f63}} 
+\index{boid@{boid}!set\+System@{set\+System}}
+\index{set\+System@{set\+System}!boid@{boid}}
+\subsubsection{\texorpdfstring{set\+System()}{setSystem()}}
+{\footnotesize\ttfamily void boid\+::set\+System (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classsystem}{system}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_ac4e66a9e65ea2e7362f6ac7af2f4fe64}\label{classboid_ac4e66a9e65ea2e7362f6ac7af2f4fe64}} 
+\index{boid@{boid}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!boid@{boid}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}}
+{\footnotesize\ttfamily void boid\+::set\+Velocity (\begin{DoxyParamCaption}\item[{vec3}]{velocity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_abf305f09cde8ce66b82a7a671fdcd744}\label{classboid_abf305f09cde8ce66b82a7a671fdcd744}} 
+\index{boid@{boid}!strong\+Wind@{strong\+Wind}}
+\index{strong\+Wind@{strong\+Wind}!boid@{boid}}
+\subsubsection{\texorpdfstring{strong\+Wind()}{strongWind()}}
+{\footnotesize\ttfamily vec3 boid\+::strong\+Wind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a93134d78fea29397c53083bb44d54615}\label{classboid_a93134d78fea29397c53083bb44d54615}} 
+\index{boid@{boid}!tend\+Away\+From\+Place@{tend\+Away\+From\+Place}}
+\index{tend\+Away\+From\+Place@{tend\+Away\+From\+Place}!boid@{boid}}
+\subsubsection{\texorpdfstring{tend\+Away\+From\+Place()}{tendAwayFromPlace()}}
+{\footnotesize\ttfamily vec3 boid\+::tend\+Away\+From\+Place (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a09fbb8f0a0e58c5fa53c95cbd517fe95}\label{classboid_a09fbb8f0a0e58c5fa53c95cbd517fe95}} 
+\index{boid@{boid}!tend\+To\+Place@{tend\+To\+Place}}
+\index{tend\+To\+Place@{tend\+To\+Place}!boid@{boid}}
+\subsubsection{\texorpdfstring{tend\+To\+Place()}{tendToPlace()}}
+{\footnotesize\ttfamily vec3 boid\+::tend\+To\+Place (\begin{DoxyParamCaption}\item[{vec3}]{place }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classboid_a3b2e087c8a4365927dbaa1a0a7d06a3a}\label{classboid_a3b2e087c8a4365927dbaa1a0a7d06a3a}} 
+\index{boid@{boid}!update\+Flap\+Status@{update\+Flap\+Status}}
+\index{update\+Flap\+Status@{update\+Flap\+Status}!boid@{boid}}
+\subsubsection{\texorpdfstring{update\+Flap\+Status()}{updateFlapStatus()}}
+{\footnotesize\ttfamily int boid\+::update\+Flap\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classboid_a5c51e87fc048ba3f179b8d45b76673c5}\label{classboid_a5c51e87fc048ba3f179b8d45b76673c5}} 
+\index{boid@{boid}!flap\+Status@{flap\+Status}}
+\index{flap\+Status@{flap\+Status}!boid@{boid}}
+\subsubsection{\texorpdfstring{flap\+Status}{flapStatus}}
+{\footnotesize\ttfamily int boid\+::flap\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classboid_a4a2816c0ff88a50c72dcc794f3a0c725}\label{classboid_a4a2816c0ff88a50c72dcc794f3a0c725}} 
+\index{boid@{boid}!position@{position}}
+\index{position@{position}!boid@{boid}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily vec3 boid\+::position\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classboid_a4efec718a6ef62318a1221a07d05d0f1}\label{classboid_a4efec718a6ef62318a1221a07d05d0f1}} 
+\index{boid@{boid}!prev\+Pos\+Time@{prev\+Pos\+Time}}
+\index{prev\+Pos\+Time@{prev\+Pos\+Time}!boid@{boid}}
+\subsubsection{\texorpdfstring{prev\+Pos\+Time}{prevPosTime}}
+{\footnotesize\ttfamily long boid\+::prev\+Pos\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classboid_a6673ea539a629b2fffbbc57e3ef56d19}\label{classboid_a6673ea539a629b2fffbbc57e3ef56d19}} 
+\index{boid@{boid}!prev\+Velocity@{prev\+Velocity}}
+\index{prev\+Velocity@{prev\+Velocity}!boid@{boid}}
+\subsubsection{\texorpdfstring{prev\+Velocity}{prevVelocity}}
+{\footnotesize\ttfamily vec3 boid\+::prev\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classboid_aa1a06f851311eb6de9fefdffc4c5a99e}\label{classboid_aa1a06f851311eb6de9fefdffc4c5a99e}} 
+\index{boid@{boid}!sys@{sys}}
+\index{sys@{sys}!boid@{boid}}
+\subsubsection{\texorpdfstring{sys}{sys}}
+{\footnotesize\ttfamily class \mbox{\hyperlink{classsystem}{system}}$\ast$ boid\+::sys\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classboid_a3493756cee09f08fd9cd2a49e8891b55}\label{classboid_a3493756cee09f08fd9cd2a49e8891b55}} 
+\index{boid@{boid}!velocity@{velocity}}
+\index{velocity@{velocity}!boid@{boid}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily vec3 boid\+::velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/include/\mbox{\hyperlink{boid_8h}{boid.\+h}}\item 
+/\+Users/madhur/\+Documents/\+Sem 6/\+C\+O\+P290/\+Assignment 2/git/\+Code/src/\mbox{\hyperlink{boid_8cpp}{boid.\+cpp}}\end{DoxyCompactItemize}
